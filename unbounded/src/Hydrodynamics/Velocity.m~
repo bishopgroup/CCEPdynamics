@@ -1,0 +1,8 @@
+function part = Velocity(param,part)
+
+Rnf = RNearField(param,part);
+
+FT = [reshape(part.F,3*part.Np,1) ; zeros(3*part.Np,1)];
+VW = Rnf \ FT;
+
+part.V = reshape(VW(1:3*part.Np),3,part.Np);
