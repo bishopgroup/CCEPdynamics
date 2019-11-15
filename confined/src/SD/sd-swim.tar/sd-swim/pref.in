@@ -1,0 +1,20 @@
+-------------------------------------------------------
+--- Particle preferences ---
+-------------------------------------------------------
+2             Number of particles (np)
+-------------------------------------------------------
+--- External Forces ---
+-------------------------------------------------------
+0.d0          Force, x direction (fexth_x)
+0.d0          Force, y direction (fexth_y)
+0.d0          Force, z direction (fexth_z)
+0.d0          Torque, x direction (texth_x)
+0.d0          Torque, y direction (texth_y)
+0.d0          Torque, z direction (texth_z)
+-------------------------------------------------------
+--- Simulation timing preferences ---
+-------------------------------------------------------
+1.0d+0       Simulation run time (tf)
+1.0d+0        Time step (dt)
+1             Outputs during exectution < tf/dt (pos_time)
+1             Output mode: data (1), movie (2) (out_mode) 
