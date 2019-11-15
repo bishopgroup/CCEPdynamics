@@ -1,0 +1,15 @@
+Stokesian Dynamics Code for simulating swimming in unbounded Stokes flow.
+Copyright 2005 - James W. Swan and John F. Brady
+
+To compile this code, simply type 'make' to run 'Makefile' and generate the executable 'sd.x'.
+All simulation parameters may be specified in two files which are read by 'sd.x' on execution.
+The first is 'pref.in' which contains all the simulation preferences (e.g. number of particles, 
+external forces, etc.).  The second is 'conf.in' which contains the initial positions of all the 
+particles.  The number of (x, y, z) coordinate sets in 'conf.in' must be greater than or equal 
+to the number of particles specified in 'pref.in' for successful execution as the positions are 
+read from the top of the file down.  This program outputs the file 'pos.out' which contains the 
+positions of the particles in time.  The frequency with which the program outputs this data may be 
+adjusted with the parameter 'pos_time' in 'pref.in'.  An additional output mode which replaces the 
+time code with a series of dashes may be set in 'pref.in' as well.  This output may be useful for 
+some when generating movies from the data in 'pos.out'.  Additional information about the code is 
+available at the top of the file 'sd.f90' and in the extensive comments distributed throughout the code. 
